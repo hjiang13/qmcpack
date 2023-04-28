@@ -18,7 +18,9 @@
 #include <complex>
 #include "OhmmsPETE/TinyVector.h"
 #include "config/stdlib/Constants.h"
-
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
 namespace qmcplusplus
 {
 template<typename T>

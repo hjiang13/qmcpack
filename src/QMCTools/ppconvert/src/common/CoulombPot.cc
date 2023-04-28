@@ -14,7 +14,7 @@
 /////////////////////////////////////////////////////////////
 
 #include "CoulombPot.h"
-
+#define M_PI            3.14159265358979323846
 double CoulombPot::V (double r)
 {
   return (Z1Z2 / r);

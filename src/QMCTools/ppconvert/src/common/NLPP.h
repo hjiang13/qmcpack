@@ -22,7 +22,9 @@
 #include "CubicSplineCommon.h"
 #include <vector>
 using namespace IO;
-
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
 class ChannelPotential
 {
 protected:

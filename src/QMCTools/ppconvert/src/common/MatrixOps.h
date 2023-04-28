@@ -20,7 +20,7 @@
 #include "Blitz.h"
 
 #include<iostream>  // for std::cerr
-
+#define M_PI            3.14159265358979323846
 void LinearLeastSquares(Array<double, 2>& A, Array<double, 1>& x, Array<double, 1>& b);
 void MatVecProd(Array<double, 2>& A, Array<double, 1>& x, Array<double, 1>& Ax);
 

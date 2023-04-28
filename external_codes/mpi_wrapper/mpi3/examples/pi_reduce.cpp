@@ -8,7 +8,7 @@ OMPI_CXX=$CXXX mpicxx $CXXFLAGS $0 -o $0x&&mpirun --oversubscribe -n 6 $0x&&rm $
 #include <random>
 
 namespace mpi3 = boost::mpi3;
-
+#define M_PI            3.14159265358979323846
 // this program is based on https://computing.llnl.gov/tutorials/mpi/samples/C/mpi_pi_reduce.c
 
 

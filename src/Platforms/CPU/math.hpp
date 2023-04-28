@@ -95,7 +95,8 @@ template<typename T,
   typename = typename std::enable_if<std::is_floating_point<T>::value>::type>
 inline bool iszero(T a)
 {
-  return std::fpclassify(a) == FP_ZERO;
+  //return std::fpclassify(a) == FP_ZERO;
+  return (std::fpclassify(a) == 0 || std::fpclassify(a) == -0.0);
 }
 
 }

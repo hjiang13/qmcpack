@@ -9,6 +9,7 @@
 #include<complex>
 
 namespace multi = boost::multi;
+#define M_PI            3.14159265358979323846
 
 BOOST_AUTO_TEST_CASE(zero_dimensionality_part1) {
 	{

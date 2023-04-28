@@ -21,5 +21,5 @@
 #include "SplinePot.h"
 #include "GeneralPot.h"
 #include "NLPP.h"
-
+#define M_PI            3.14159265358979323846
 #endif

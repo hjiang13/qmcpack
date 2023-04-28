@@ -23,7 +23,9 @@
 #include <stdio.h>
 #include <vector>
 #include "config/stdlib/Constants.h"
-
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
 TEST_CASE("double_1d_natural", "[einspline]")
 {
   // two point case

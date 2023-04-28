@@ -16,6 +16,9 @@
 #ifndef QMCPLUSPLUS_LATTICE_ANALYZER_H
 #define QMCPLUSPLUS_LATTICE_ANALYZER_H
 #include "OhmmsPETE/TinyVector.h"
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
 namespace qmcplusplus
 {
 /** enumeration for DTD_BConds specialization

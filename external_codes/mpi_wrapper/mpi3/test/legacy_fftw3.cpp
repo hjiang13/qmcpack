@@ -9,7 +9,9 @@
 #include "../main.hpp"
 
 const ptrdiff_t N0 = 16, N1 = 16;
-
+#ifndef M_PI
+    #define M_PI 3.14159265358979323846
+#endif
 std::complex<double> myf_x(ptrdiff_t i, ptrdiff_t j){
 	return {cos(2*M_PI*i/N1), sin(2*M_PI*i/N1)};
 }
