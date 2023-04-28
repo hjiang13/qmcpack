@@ -11618,14 +11618,14 @@ namespace Floating {
 
         ret << " ([";
         if (m_type == FloatingPointKind::Double) {
-            write(ret, step(m_target, static_cast<double>(-INFINITY), m_ulps));
+            write(ret, step(m_target, static_cast<double>(-1.0/0.0), m_ulps));
             ret << ", ";
-            write(ret, step(m_target, static_cast<double>( INFINITY), m_ulps));
+            write(ret, step(m_target, static_cast<double>( 1.0/0.0), m_ulps));
         } else {
             // We have to cast INFINITY to float because of MinGW, see #1782
-            write(ret, step(static_cast<float>(m_target), static_cast<float>(-INFINITY), m_ulps));
+            write(ret, step(static_cast<float>(m_target), static_cast<float>(-1.0/0.0), m_ulps));
             ret << ", ";
-            write(ret, step(static_cast<float>(m_target), static_cast<float>( INFINITY), m_ulps));
+            write(ret, step(static_cast<float>(m_target), static_cast<float>( 1.0/0.0), m_ulps));
         }
         ret << "])";
 
